@@ -1,35 +1,3 @@
-# Fantasy RPG Inventory Server
-
-This project is a simple backend server for managing a Fantasy RPG inventory. It allows users to add, update, delete, and view RPG character items through a RESTful API.
-
-## Project Structure
-This section outlines the structure of the `fantasy-rpg` project and provides a brief description of each file and directory:
-```
-fantasy-rpg/
-│
-├── middleware/
-│ ├── db.js
-│ ├── db.json
-│ └── default_db.json
-│
-├── public/
-│ ├── css/
-│ │ ├── api.css
-│ │ └── style.css
-│ ├── img/
-│ ├── js/
-│ │ ├── index.js
-│ │ └── toaster.js
-│ ├── api.html
-│ └── index.html
-│
-├── package.json
-├── readme.md
-└── server.js
-```
-### `fantasy-rpg/`
-Root directory of the Fantasy RPG project.
-
 #### `middleware/`
 Contains middleware and utility files related to data handling and processing.
 - **`db.js`**: A JavaScript file containing logic to manipulate the `db.json` data, such as loading and saving data.
@@ -101,8 +69,3 @@ Once the server is running, you can use the provided endpoints to manage the RPG
 - Delete an item: Sends a **DELETE** request to **/api/items/:id**
 
 Visit http://localhost:4042/api for more details.
-
-# Demonstration
-You can watch a video showing what your assignment is supposed to do:
-
-[Watch the Video](./public/docs/A02%20Example.mp4).
