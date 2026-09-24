@@ -9,7 +9,7 @@ It allows for the user to add in a pokemons pokedex number, name, type, species,
 The site also allows for you to reset the pokedex back to only show the 6 pokemon that were originally there. Each pokemon in the dictionary has an edit and delete button. The delete button removes the pokemon from the site and the json file, and the edit button allows for you to edit all of the pokemons data exept for the pokedex number which then also updates the json file.
 
 
-##Files
+## Files
 
 #### `middleware/`
 Contains middleware and utility files related to data handling and processing.
