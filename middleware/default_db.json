@@ -1,0 +1,47 @@
+{
+  "items": [
+    {
+      "pokedex_number": "0025",
+      "name": "Pikachu",
+      "type": "Electric",
+      "species": "Mouse Pokemon",
+      "evolutions": "2"   
+    },
+    {
+      "pokedex_number": "0001",
+      "name": "Bulbasaur",
+      "type": "Grass & Poison",
+      "species": "Seed Pokemon",
+      "evolutions": "2"
+    },
+    {
+      "pokedex_number": "0004",
+      "name": "Charmader",
+      "type": "Fire",
+      "species": "Lizard Pokemon",
+      "evolutions": "2"
+    },
+    {
+      "pokedex_number": "0007",
+      "name": "Squirtle",
+      "type": "Water",
+      "species": "Tiny Turtle Pokemon",
+      "evolutions": "2"
+    },
+    {
+      "pokedex_number": "0132",
+      "name": "Ditto",
+      "type": "Normal",
+      "species": "Transform Pokemon",
+      "evolutions": "0"
+    },
+    {
+      "pokedex_number": "0359",
+      "name": "Absol",
+      "type": "Dark",
+      "species": "Disaster Pokemon",
+      "evolutions": "0"
+    }
+  ]
+}
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <header>
+        <IMG id = 'pokegif' SRC='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHVudDBsN2xlODgzNmZ6ejh6a2o1NmFvazVnMTk2enUxbmpkcHZlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cOR2fPCZgErzi6COcG/giphy.gif'>
+        <IMG id = 'pokemonTitle' SRC='https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/3840px-International_Pok%C3%A9mon_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail'>
+        <IMG id = 'pokegif'SRC = 'https://media1.giphy.com/media/3dbEAOOmPXnTpMqgF5/giphy.gif?cid=6c09b952g4vdshoi38s33epqf962xi3wla29d1qgx9e24cd9&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s'>    
+    </header>
+    <main>
+        <div class="container">
+            <form id="characterForm">
+
+                <!-- pokemon number -->
+                <div class="form-group">
+                    <label for="pokedex_number">Pokedex Number:</label>
+                    <input type="text" id="number" required>
+                </div>
+                <!-- pokemon name -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name"required>
+                </div>
+                <!-- pokemon type -->
+                <div class="form-group">
+                    <label for="type">Type:</label>
+                    <option disabled selected value></option>
+                    <select id="type" name="type" required>
+                        <option disabled selected value></option>
+                        <option value="Electric">Electric</option>
+                        <option value="Ghost">Ghost</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Poison">Poison</option>
+                        <option value="Water">Water</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Fire">Fire</option>
+                        <option value="Flying">Flying</option>
+                        <option value="Grass">Grass</option>
+                        <option value="Ground">Ground</option>
+                        <option value="Psychic">Psychic</option>
+                        <option value="Steel">Steel</option>
+                        <option value="Ice">Ice</option>
+                        <option value="Fairy">Fairy</option>
+                        <option value="Bug">Bug</option>
+                        <option value="Rock">Rock</option>
+                    </select>
+
+                <!-- pokemon species -->
+                <div class="form-group">
+                    <label for="name">Species:</label>
+                    <input type="text" id="species" required>
+                
+                <!-- pokemon evolutions -->
+                <div class="form-group">
+                    <label for="class">Evolutions:</label>
+                    <select id="evolutions" required>
+                        <option disabled selected value></option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                <br>
+
+                <button type="button" id="addPokemon">Add Pokemon</button>
+                <button type="button" id="resetPokedex">Reset Pokedex</button>
+            </form>
+        </div>
+
+    </main>
+    <div id="pokedex"><h2>-Pokedex-</h2> </div>
+    <div id="list-container"></div>
+    <footer>
+        ©2024 Pokémon. ©1995 - 2024 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.
+    </footer>
+    <script type="module">
+        // This is my toaster component in case you can use it
+        // It should come before your script file
+        // It has three modes: add (green), update (blue), remove (red)
+        // To use:
+        //  toaster.show(mode, message, delay);
+        //  mode: string with he possible values "add", "update", "remove"
+        //  message: string with a message you want to display on screen
+        //  delay: a number in milliseconds
+        // Example:
+        //  toaster.show('add', `Item ${item.name} added...`, 2000);
+        import { toaster } from './js/toaster.js'; 
+        window.toaster = toaster; 
+    </script>
+    <script src="js/index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
